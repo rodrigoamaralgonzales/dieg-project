@@ -1,0 +1,28 @@
+{
+  "workbench.colorCustomizations": {
+    // Área de Código (Fundo Laranja muito escuro/Marrom quase preto)
+    "editor.background": "#140e05", 
+    "editor.lineHighlightBackground": "#ff8c0022",
+    
+    // Barras Laterais e de Atividade
+    "sideBar.background": "#140e05",
+    "activityBar.background": "#0a0703",
+    "activityBar.foreground": "#ff8c00",
+    
+    // Abas e Cabeçalhos
+    "editorGroupHeader.tabsBackground": "#0a0703",
+    "tab.activeBackground": "#140e05",
+    "tab.activeForeground": "#ff8c00",
+    "tab.inactiveBackground": "#0a0703",
+    
+    // Barras Principais (Título e Status) 
+    "titleBar.activeBackground": "#0a0703", //barra de cima
+    "titleBar.activeForeground": "#e67e22", //titulos barra de cima
+    "statusBar.background": "#0a0703", //barra de baixo
+    "statusBar.foreground": "#ffffff", //titulos barra de baixo
+
+    // Terminal e Painéis
+    "panel.background": "#140e05",
+    "panel.border": "#e67e22"
+  }
+}
