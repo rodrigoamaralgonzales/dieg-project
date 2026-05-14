@@ -128,9 +128,11 @@ html {
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
   section {
     min-height: 100vh;
     position: relative;
+    overflow: visible !important;
   }
 }
