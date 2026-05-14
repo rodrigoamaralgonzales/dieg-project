@@ -133,6 +133,6 @@ html {
   section {
     min-height: 100vh;
     position: relative;
-    overflow: visible !important;
+    overflow-y: visible !important;
   }
 }
