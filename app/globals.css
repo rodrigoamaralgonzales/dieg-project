@@ -131,7 +131,7 @@ html {
   }
   section {
     max-height: 100vh;
-    overflow-y: auto;
-    scrollbar-width: thin;
+    position: relative;
+    overflow-x: hidden;
   }
 }

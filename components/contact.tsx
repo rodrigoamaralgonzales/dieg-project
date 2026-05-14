@@ -19,7 +19,7 @@ export function Contact() {
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 text-balance">
                 Vamos conversar sobre seu futuro?
               </h2>
-              <p className="text-muted-foreground mt-4 leading-relaxed">
+              <p className="text-muted-foreground mt-4 leading-snug">
                 Entre em contato comigo para tirar suas dúvidas sobre cursos, valores,
                 formas de pagamento e muito mais. Estou aqui para ajudar você a dar o
                 próximo passo na sua carreira.

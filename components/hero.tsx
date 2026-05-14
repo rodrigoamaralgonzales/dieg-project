@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Award, ChevronRight, GraduationCap, Users, BookOpen } from "lucide-react"
+import { ChevronRight, GraduationCap, Users, BookOpen } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion"
@@ -35,7 +35,7 @@ export function Hero({ show = true }: HeroProps) {
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
 
-      <div className="container relative mx-auto px-6 md:px-12 pt-28 pb-20">
+      <div className="container relative mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <motion.div 
@@ -44,25 +44,8 @@ export function Hero({ show = true }: HeroProps) {
             transition={{ duration: isFirstLoad ? 0.5 : 0, delay: isFirstLoad ? 0.2 : 0 }}
             className="space-y-8"
           >
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={show ? { 
-                opacity: 1, 
-                scale: 1,
-                y: [0, -5, 0]
-              } : { opacity: 0, scale: 0.9 }}
-              transition={{ 
-                opacity: { delay: isFirstLoad ? 0.4 : 0, duration: isFirstLoad ? 0.3 : 0 },
-                scale: { delay: isFirstLoad ? 0.4 : 0, duration: isFirstLoad ? 0.3 : 0 },
-                y: { repeat: Infinity, duration: 4, ease: "easeInOut" }
-              }}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary/15 text-primary text-sm font-semibold border border-primary/20 shadow-sm"
-            >
-              <Award className="h-4 w-4" />
-              8 anos transformando vidas
-            </motion.div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-[1.1] text-balance">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.2] text-balance">
               Transforme seu futuro com a{" "}
               <span className="text-primary relative">
                 educação certa
@@ -72,7 +55,7 @@ export function Hero({ show = true }: HeroProps) {
               </span>
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
+            <p className="text-base md:text-lg text-muted-foreground max-w-xl leading-snug">
               Sou <strong className="text-foreground">Diego Souza</strong>, consultor educacional da Anhanguera. Há 8 anos ajudo pessoas
               a escolherem o curso ideal para suas carreiras. Mais de <strong className="text-foreground">8 mil alunos</strong> já tiveram
               suas vidas transformadas com minha orientação.
@@ -153,7 +136,7 @@ export function Hero({ show = true }: HeroProps) {
             <motion.div 
               animate={{ y: [0, -15, 0] }}
               transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
-              className="relative w-full max-w-lg"
+              className="relative w-full max-w-md z-10"
             >
               <div className="aspect-square w-full rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/20 relative">
                 <Image 
@@ -169,7 +152,7 @@ export function Hero({ show = true }: HeroProps) {
               <motion.div 
                 animate={{ y: [0, 8, 0] }}
                 transition={{ repeat: Infinity, duration: 4, ease: "easeInOut", delay: 1 }}
-                className="absolute -bottom-6 -left-6 bg-card px-6 py-4 rounded-2xl shadow-xl border border-border/50 backdrop-blur-sm"
+                className="absolute -bottom-6 -left-6 bg-card px-6 py-4 rounded-2xl shadow-xl border border-border/50 backdrop-blur-sm z-20"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
@@ -186,7 +169,7 @@ export function Hero({ show = true }: HeroProps) {
               <motion.div 
                 animate={{ y: [0, -8, 0] }}
                 transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 0.5 }}
-                className="absolute -top-4 -right-4 bg-primary text-primary-foreground px-5 py-3 rounded-2xl shadow-xl"
+                className="absolute -top-4 -right-4 bg-primary text-primary-foreground px-5 py-3 rounded-2xl shadow-xl z-20"
               >
                 <div className="text-center">
                   <div className="text-2xl font-bold">8.000+</div>

@@ -57,7 +57,7 @@ export function About() {
               </h2>
             </div>
 
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-snug">
               Há 8 anos atuo como consultor educacional em parceria com a Anhanguera,
               uma das maiores instituições de ensino superior do Brasil. Minha missão é
               ajudar você a encontrar o curso perfeito para sua carreira, seja presencial,
